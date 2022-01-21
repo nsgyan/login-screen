@@ -1,11 +1,258 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta charset="utf-8">
-<title>Login Screen</title>
-</head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Big Leap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
 
+<style>
+* {
+    margin: 0;
+    padding: 0;
+}
+.main-bg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #F9F9F9;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    position: relative;
+}
+.main-bg .leftContent img {
+    width: 25%;
+}
+.main-bg .leftContent h3 {
+    font-size: 50px;
+    font-weight: 700;
+    color: #111;
+    margin: 18px 0;
+    position: relative;
+}
+.main-bg .leftContent h6 {
+    font-size: 30px;
+    font-weight: 400;
+    color: #111;
+}
+.leftContent .icon-img img {
+    width: 100%;
+    position: relative;
+    left: -260px;
+    width: 200px;
+    width: 200px;
+    top: -40px;
+}
+.trooLogoSec {
+    display: flex;
+}
+.leftContent .trooLogoSec .troo-Logo img{
+    width: 270px;
+    padding-right: 1.3rem;
+}
+.trooLogoSec {
+    margin-top: 5rem;
+}
+.information {
+    border-left: 2px solid rgb(153, 151, 151);
+}
+.information ul {
+    list-style-type: none;
+    padding-left: 1.5rem;
+}
+.information ul li {
+    font-size: 12px;
+}
+.copyright {
+    background: #fff;
+    border-radius: 10px;
+    padding: 6px 10px;
+    border: 1px solid #b3b3b3;
+    margin-top: 40px;
+    width: 70%;
+}
+.copyright p {
+    margin-bottom: 0;
+    color: #6c6b6b;
+    font-size: 13px;
+}
+.RightContent .logo img {
+    width: 100%;
+}
+.logo {
+    background: #fff;
+    padding: 15px;
+} 
+.login {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.loginForm {
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 10px;
+}
+.loginForm .login h3 {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+.loginForm p {
+    margin-bottom: 0;
+    color: #979797;
+    margin: 15px 0 0;
+}
+.loginForm .loginField .form-control {
+    margin-top: 15px;
+    color: #212529;
+    background-color: #f3f3f3;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 0.25rem;
+}
+.loginForm .loginField .form-control:focus {
+    color: #212529;
+    background-color: #f3f3f3;
+    border-color: none;
+    outline: 0;
+    box-shadow: none;
+}
+.RememberForgot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px 0;
+}
+.RememberForgot p {
+    margin-top: 0;
+}
+.Remember .form-check-input:focus {
+    border-color: #bdbcbc;
+    outline: 0;
+    box-shadow: none;
+}
+.LoginBTN {
+    width: 100%;
+    background: #F2221F;
+    border-radius: 7px;
+    border: none;
+    color: #fff;
+    padding: 15px 0;
+    font-size: 20px;
+    font-weight: 500;
+}
+.LoginBTN:hover {
+    background: #af110e;
+}
+.loginForm h6 {
+    margin-top: 15px;
+}
+.loginForm h6 span a {
+    color: #F2221F;
+}
+</style>
+</head>
 <body>
-    <h1>Hello gyan</h1>
+    
+<section class="main-bg">
+    <div class="main-bg-con">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="leftContent">
+                        <img src="img/driving-digital-log.png" alt="">
+                        <div class="row">
+                            <div class="col-lg-10">
+                                <h3>Welcome Back</h3>
+                                <h6>Experience the all new digital<br> transformation experience</h6>
+                                
+                            </div>
+                            <div class="col-lg-2">
+                                <div class="icon-img">
+                                    <img src="img/icon-img.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="trooLogoSec">
+                                    <div class="troo-Logo">
+                                        <img src="img/red.png" alt="">
+                                    </div>
+                                    <div class="information">
+                                        <ul>
+                                            <li class="d-flex"><i class="fas fa-exclamation-circle" style="margin: 5px 10px 0 0;"></i>info@troology.com</li>
+                                            <li class="d-flex"><i class="fas fa-question-circle" style="margin: 5px 10px 0 0;"></i> Support@troology.com</li>
+                                            <li class="d-flex"><i class="fas fa-headset" style="margin: 5px 10px 0 0;"></i>1800 11 123</li>
+                                            <li class="d-flex"><i class="fas fa-globe" style="margin: 5px 10px 0 0;"></i>www.troology.com</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="copyright">
+                            <p>COPYRIGHT © 2021 TROOLOGY TECHNOLOGIES .ALL RIGHTS RESERVED</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="RightContent">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="logo">
+                                    <img src="img/red.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="loginForm">
+                            <div class="login">
+                                <h3>Log In</h3>
+                                <img src="img/Icon material-security.png" alt="">
+                            </div>
+                            <p>This is secure system and you will need to provide your login details to access.</p>
+                            <div class="loginField">
+                                <div class="form-floating mb-3">
+                                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                                    <label for="floatingInput">Email address</label>
+                                </div>
+                                <div class="form-floating">
+                                    <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                                    <label for="floatingPassword">Password</label>
+                                </div>
+                            </div>
+                            <div class="RememberForgot">
+                                <div class="Remember">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                        <label class="form-check-label" for="defaultCheck1">
+                                          Remember Me
+                                        </label>
+                                    </div>
+                                </div>
+                                <p>Forgot Password</p>
+                            </div>
+                            <button class="LoginBTN">LOGIN</button>
+                            <h6 class="text-center">Are you a new user?<span><a href="javascript:void(0)"> Register Now!</a></span></h6>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> 
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>    
 </body>
 </html>
